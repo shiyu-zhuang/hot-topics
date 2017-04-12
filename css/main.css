@@ -1,0 +1,535 @@
+/*Color
+rgb(11, 78, 75) | #0B4E4B
+rgb(110, 78, 75) | #6E4E4B
+#fffff
+#454545
+#D4D3D2
+#6B7B6E
+
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.5;
+    text-align: center;
+    font-family: 'ABeeZee', san-serif;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+main {
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+p::first-letter {
+    font-size: 1.1rem;
+    color: rgb(110, 78, 75);
+    font-weight: bold;
+}
+
+h2 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.1rem;
+    margin: 8px auto;
+    border-bottom: 2px solid rgb(11, 78, 75);
+    color: rgb(11, 78, 75)
+}
+
+h3 {
+    font-style: italic;
+}
+
+p {
+    text-align: left;
+    color: #454545;
+}
+
+.logo {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 1.1rem;
+    color: white;
+    font-size: 2rem;
+}
+
+title {
+    display: none;
+}
+
+header {
+    margin-bottom: 15px;
+}
+
+
+/*main*/
+
+main {
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+}
+
+.more {
+    font-size: 0.6rem;
+    text-align: left;
+}
+
+.more::first-letter {
+    font-size: 0.6rem;
+}
+
+.more a {
+    text-align: left;
+}
+
+.more a:link,
+.more a:visited {
+    color: #6B7B6E;
+}
+
+.more a:hover,
+.more a:active {
+    color: rgb(11, 78, 75);
+}
+
+
+/*logo*/
+
+.logo {
+    padding: 15px;
+}
+
+
+/*nav*/
+
+.box {
+    background-color: rgba(110, 78, 75, 0.6);
+}
+
+.box li:first-of-type {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.box li {
+    padding: 13px 5px;
+    width: 100%;
+}
+
+.box li a:link,
+.box li a:visited {
+    color: white;
+    text-decoration: none;
+    font-family: 'ABeeZee', serif;
+}
+
+.box li a:hover,
+.box li a:active {
+    font-family: 'ABeeZee', serif;
+}
+
+.banner {
+    clear: both;
+}
+
+
+/*masthead*/
+
+header {
+    background-color: dimgrey;
+    background-image: url("../img/city.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.tagline {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    position: absolute;
+    top: 240px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.tagline::first-letter {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.text {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*img*/
+
+img {
+    width: 100%;
+}
+
+
+/*form*/
+
+.contact {
+    padding-top: 30px;
+}
+
+form input {
+    width: 96%;
+    display: block;
+    margin: 10px auto;
+    padding: 5px 0;
+}
+
+textarea {
+    width: 96%;
+    display: block;
+    margin: 10px auto;
+    padding: 5px 0;
+}
+
+.submit {
+    width: 96%;
+    margin: 0 auto;
+    background-color: rgb(11, 78, 75);
+    color: white;
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+}
+
+textarea {
+    border: 1px solid #D4D3D2;
+}
+
+textarea:focus {
+    outline: 0;
+    border-color: rgb(11, 78, 75);
+}
+
+input[type=text]:focus {
+    border-color: rgb(11, 78, 75);
+    outline: 0;
+}
+
+input[type=submit]:focus {
+    background-color: rgb(110, 78, 75);
+    outline: 0;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.feedback {
+    background: rgba(110, 78, 75, .7);
+    color: white;
+    line-height: 1.5;
+    width: 96%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.padding {
+    padding: 10px 0;
+}
+
+
+/*footer*/
+
+footer {
+    background: rgb(110, 78, 75);
+    margin-top: 1.5rem;
+    color: white;
+    width: 100%;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    font-family: 'ABeeZee', serif;
+    clear: both;
+}
+
+footer .info,
+footer section {
+    font-size: 2rem;
+}
+
+footer ul.social-media li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 20px 10px;
+    width: 4%;
+}
+
+footer ul li {
+    font-size: 0.618rem;
+}
+
+.social-media a {
+    transition: all 0.03s ease-in-out;
+}
+
+.social-media a:link,
+.social-media a:visited {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.social-media a:hover,
+.social-media a:active {
+    color: #D4D3D2;
+    transform: skewX(-10deg);
+}
+
+footer .info,
+footer section {
+    margin: 0 auto;
+}
+
+@media (max-width: 80rem) and (min-width: 35rem) {
+    * {
+        font-size: 1rem;
+    }
+    header {
+        height: 500px;
+    }
+    main {
+        width: 86%;
+        display: block;
+        margin: 0 auto;
+    }
+    p::first-letter {
+        font-size: 1.6rem;
+        color: rgb(110, 78, 75);
+        font-weight: bold;
+    }
+    .more {
+        font-size: .8rem;
+    }
+    .more::first-letter {
+        font-size: .8rem;
+    }
+    /*main*/
+    h2 {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 1.5rem;
+        margin: 13px auto;
+    }
+    .box {
+        background-color: transparent;
+    }
+    .box li {
+        display: inline-block;
+        width: 20%;
+        margin: 0 auto;
+        border-bottom: 8px solid rgba(110, 78, 75, 0.6);
+    }
+    .box li:first-of-type {
+        border-bottom: 8px solid rgba(110, 78, 75, 0.6);
+    }
+    .box li:hover {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    .tagline {
+        top: 300px;
+    }
+    .tagline::first-letter {
+        font-size: 2rem;
+    }
+    .text {
+        font-size: 2rem;
+        width: 40%;
+        margin: 0 auto;
+        display: block;
+        background: rgba(110, 78, 75, 0.7);
+        padding: 10px 0;
+        border-radius: 10px;
+    }
+    img {
+        margin: 0 1.5rem 0.5rem 0;
+        float: left;
+        width: 40%;
+    }
+    p {
+        text-align: left;
+    }
+    /*footer*/
+    footer ul li {
+        font-size: .9rem;
+    }
+    .social-media a {
+        font-size: 2rem;
+    }
+    .social-media a:hover,
+    .social-media a:active {
+        color: #D4D3D2;
+        transform: skewX(-10deg);
+    }
+    /*form*/
+    .contact {
+        padding-top: 30px;
+    }
+    .left {
+        width: 30%;
+        float: left;
+    }
+    textarea {
+        width: 70%;
+        float: right;
+        height: 127px;
+    }
+    .submit {
+        width: 28.8%;
+        margin: 10px 0 20px 7px;
+        background-color: rgb(11, 78, 75);
+        color: white;
+    }
+}
+
+@media (min-width: 80rem) {
+    * {
+        font-size: 1.618rem;
+        max-width: 100rem;
+        display: block;
+        margin: 0 auto;
+    }
+    header {
+        height: 700px;
+    }
+    p::first-letter {
+        font-size: 2.3rem;
+        color: rgb(110, 78, 75);
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 2.1rem;
+    }
+    .more {
+        font-size: 1.1rem;
+    }
+    .more::first-letter {
+        font-size: 1.1rem;
+    }
+    .logo {
+        width: 100px;
+        float: left;
+    }
+    .bg-main {
+        width: 30%;
+        float: left;
+    }
+    .logo {
+        margin-top: 15px;
+    }
+    .tagline {
+        top: 350px;
+    }
+    .text {
+        font-size: 2.1rem;
+        width: 30%;
+        margin: 0 auto;
+        display: block;
+        background: rgba(110, 78, 75, 0.7);
+        padding: 25px 0;
+        border-radius: 10px;
+    }
+    .tagline::first-letter {
+        font-size: 2.1rem;
+    }
+    /*main*/
+    main {
+        width: 86%;
+        display: block;
+        margin: 0 auto;
+    }
+    .box {
+        margin-top: 30px;
+        background-color: transparent;
+    }
+    .box li {
+        display: inline-block;
+        background-color: transparent;
+        border-bottom: 8px solid rgba(110, 78, 75, 0.6);
+        margin-right: 5px;
+        padding: 8px 0;
+        width: 30%;
+    }
+    .box li:first-of-type {
+        border-bottom: 8px solid rgba(110, 78, 75, 0.6);
+    }
+    .box li:hover {
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    img {
+        margin: 0 1.5rem 0.5rem 0;
+        float: left;
+        width: 40%;
+    }
+    h2 {
+        margin: 20px 0 10px 0;
+    }
+    h2,
+    p {
+        text-align: left;
+    }
+    .l,
+    .r {
+        float: left;
+        width: 48%;
+    }
+    .r {
+        margin-left: 4%;
+    }
+    /*footer*/
+    footer ul li {
+        font-size: 1.2rem;
+    }
+    .social-media a {
+        font-size: 2.5rem;
+    }
+    .social-media a:hover,
+    .social-media a:active {
+        color: #D4D3D2;
+        transform: skewX(-10deg);
+    }
+    /*form*/
+    .contact {
+        padding-top: 30px;
+    }
+    .left {
+        width: 30%;
+        float: left;
+    }
+    textarea {
+        width: 70%;
+        float: right;
+        height: 170px;
+    }
+    .submit {
+        width: 28.8%;
+        margin: 10px 0 20px 7px;
+        background-color: rgb(11, 78, 75);
+        color: white;
+    }
+}
